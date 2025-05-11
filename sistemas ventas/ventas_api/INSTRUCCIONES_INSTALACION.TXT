@@ -1,0 +1,62 @@
+===============================
+GUÍA DE INSTALACIÓN DEL PROYECTO DJANGO
+===============================
+
+1. CLONAR EL PROYECTO DESDE GIT
+--------------------------------
+Abre PowerShell y ejecuta el siguiente comando:
+
+git clone https://github.com/tu_usuario/tu_repositorio.git
+
+(Reemplaza la URL por la del repositorio correspondiente)
+
+Luego entra en la carpeta del proyecto:
+
+cd tu_repositorio
+
+
+2. CREAR Y ACTIVAR ENTORNO VIRTUAL
+----------------------------------
+python -m venv venv
+.\venv\Scripts\activate
+
+
+3. INSTALAR DEPENDENCIAS
+-------------------------
+pip install -r requirements.txt
+
+
+4. APLICAR MIGRACIONES
+-----------------------
+python manage.py makemigrations
+python manage.py migrate
+
+
+5. CREAR UN SUPERUSUARIO
+-------------------------
+python manage.py createsuperuser
+
+Te pedirá ingresar:
+- Nombre de usuario
+- Correo electrónico
+- Contraseña
+
+
+6. INICIAR EL SERVIDOR
+-----------------------
+python manage.py runserver
+
+Después de eso, abre en el navegador:
+http://127.0.0.1:8000/
+
+Y para acceder al panel de administración:
+http://127.0.0.1:8000/admin
+
+
+===============================
+NOTAS:
+===============================
+- Asegúrate de tener Python instalado (versión 3.10 o superior recomendada)
+- Si hay errores de migración, revisa que las apps estén bien registradas en settings.py
+- El entorno virtual no debe incluirse en el repositorio (.gitignore)
+
