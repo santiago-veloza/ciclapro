@@ -6,9 +6,9 @@ GUÍA DE INSTALACIÓN DEL PROYECTO DJANGO
 --------------------------------
 Abre PowerShell y ejecuta el siguiente comando:
 
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone https://github.com/santiago-veloza/ciclapro.git
 
-(Reemplaza la URL por la del repositorio correspondiente)
+
 
 Luego entra en la carpeta del proyecto:
 
